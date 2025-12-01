@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AWS CLI Bucket Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>AWS CLI Bucket Demo</h1>
+    <p>Create and test your AWS S3 bucket with CLI</p>
+  </header>
+
+  <main class="main">
+    <section class="card">
+      <h2>Welcome!</h2>
+      <p>
+        This is a second static HTML page with a different design.
+        You can upload it to your new S3 bucket created using the AWS CLI.
+      </p>
+      <p>
+        Use it to test that your bucket works correctly once deployed.
+      </p>
+
+      <a href="#cli" class="btn">AWS CLI Instructions</a>
+    </section>
+
+    <section id="cli" class="cli-section">
+      <h3>How to Create a Bucket via AWS CLI</h3>
+      <pre class="code-block">
+aws s3api create-bucket \
+  --bucket my-cli-created-bucket \
+  --region eu-central-1 \
+  --create-bucket-configuration LocationConstraint=eu-central-1
+      </pre>
+
+      <p>Then upload the files:</p>
+
+      <pre class="code-block">
+aws s3 cp index.html s3://my-cli-created-bucket/
+aws s3 cp styles.css s3://my-cli-created-bucket/
+      </pre>
+
+      <p>Enable static website hosting via the AWS Console or CloudFormation.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> AWS CLI Static Page</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

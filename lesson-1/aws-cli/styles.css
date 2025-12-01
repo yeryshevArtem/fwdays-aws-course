@@ -1,0 +1,116 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #3b82f6, #9333ea);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+.header h1 {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Main content */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+/* Card */
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 3rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  margin: 0.6rem 0;
+  line-height: 1.5;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #fff;
+  color: #4f46e5;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #f3f4f6;
+  transform: translateY(-2px);
+}
+
+/* CLI Section */
+.cli-section {
+  max-width: 800px;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 1.8rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cli-section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.code-block {
+  background: #111827;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #e5e7eb;
+  font-family: "Courier New", monospace;
+  overflow-x: auto;
+  margin: 0.7rem 0 1.5rem 0;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1.2rem 0;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
