@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My S3 Static Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">My S3 Website</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h2>Welcome to my static site on AWS S3</h2>
+          <p>
+            This is a simple static HTML page hosted from an Amazon S3 bucket.
+            You can customize this text, styles, and structure as you like.
+          </p>
+          <a href="#about" class="btn-primary">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h3>About this page</h3>
+        <p>
+          This page is a basic example of a static website. It uses only
+          HTML and CSS, which makes it perfect for hosting on
+          <strong>Amazon S3 Static Website Hosting</strong>.
+        </p>
+        <p>
+          You can edit the content directly in the <code>index.html</code> file
+          and update the styling in <code>styles.css</code>.
+        </p>
+      </div>
+    </section>
+
+    <section id="features" class="section section-alt">
+      <div class="container">
+        <h3>Features</h3>
+        <div class="grid">
+          <div class="card">
+            <h4>Static &amp; Fast</h4>
+            <p>
+              No backend, no database. Just pure HTML, CSS, and optional JavaScript.
+            </p>
+          </div>
+          <div class="card">
+            <h4>Easy to Deploy</h4>
+            <p>
+              Upload the files to an S3 bucket, enable static website hosting,
+              and you’re online.
+            </p>
+          </div>
+          <div class="card">
+            <h4>Scalable</h4>
+            <p>
+              Serve your site globally with Amazon CloudFront if you need more performance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h3>Contact</h3>
+        <p>
+          Replace this text with your contact info or a link to your social profiles.
+        </p>
+        <p>
+          Email: <a href="mailto:your-email@example.com">your-email@example.com</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> My S3 Static Website. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Small script only to keep the year up to date (optional)
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
